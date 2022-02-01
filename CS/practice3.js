@@ -15,7 +15,7 @@ const solution = function (matrix, queries) {
     }
   }
   console.log(" round 1 blackcells", blackCells);
-  console.log(" round 1 white cells", whiteCells);
+  console.log(" round 1 whitecells", whiteCells);
 
   // you need to put them in order 
 
