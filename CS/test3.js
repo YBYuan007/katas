@@ -16,27 +16,27 @@ const func = function (operations) {
         );
         result = result + remainingWord;
         resultOrder.push(result);
-        console.log(i, keyWord, result, resultOrder);
+        // console.log(i, keyWord, result, resultOrder);
         break;
 
       case "DELETE":
         result = result.substring(0, result.length - 1);
         resultOrder.push(result);
-        console.log(i, keyWord, result, resultOrder);
+        // console.log(i, keyWord, result, resultOrder);
         break;
 
       case "COPY":
         //copy the substring of the current text starting from <index> and spanning until the end (if <index> is out of bounds copies an empty string),
         // i.e. sets the clipboard value equal to the given substring
         const ind = operations[i].split(" ")[1];
-        console.log("within copy", ind);
+        // console.log("within copy", ind);
         if (ind) {
           clipboard = result.substring(ind);
         } else {
           clipboard = "";
         }
         // resultOrder = resultOrder.push(result);
-        console.log(i, keyWord, result, resultOrder, clipboard);
+        // console.log(i, keyWord, result, resultOrder, clipboard);
         break;
 
       case "PASTE":
@@ -44,7 +44,7 @@ const func = function (operations) {
           result = result + clipboard;
           resultOrder.push(result);
         }
-        console.log(i, keyWord, result, resultOrder, clipboard);
+        // console.log(i, keyWord, result, resultOrder, clipboard);
         break;
 
       case "UNDO":
@@ -55,7 +55,7 @@ const func = function (operations) {
           }
         }
         resultOrder.pop();
-        console.log(i, keyWord, result, resultOrder, clipboard);
+        // console.log(i, keyWord, result, resultOrder, clipboard);
         break;
     }
   }
