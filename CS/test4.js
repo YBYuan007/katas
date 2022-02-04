@@ -37,5 +37,3 @@ console.log(func(n, operations));
 n = 2;
 operations = ["L", "L", "L", "C1"];
 console.log(func(n, operations));
-
-///////////////////
