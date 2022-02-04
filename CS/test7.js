@@ -3,6 +3,7 @@ const find_mistake = function (nums) {
   nums.sort(); 
   let dup = null; 
   let missing = null; 
+  let newList = [];
   for (let i = 0 ; i < nums.length ; i ++) {
     // console.log(nums);
     if (nums[i] === nums[i+1]) {
